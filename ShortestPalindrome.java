@@ -5,7 +5,6 @@ public class ShortestPalindrome {
 	public String solve(String s) {
 		
 		int n=s.length()-1;
-		
 		for(int i=n;i>=0;i--)
 		{
 			if(isPalindrome(s,0,i))
@@ -16,7 +15,6 @@ public class ShortestPalindrome {
 				return rev+s;
 			}
 		}
-
 		return s;
     }
 	
@@ -41,6 +39,7 @@ public class ShortestPalindrome {
 		}
 		return true;
 	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ShortestPalindrome sp=new ShortestPalindrome();
@@ -52,3 +51,4 @@ public class ShortestPalindrome {
 	}
 
 }
+
